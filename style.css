@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: var(--custom-light-pink);
 }
 
 .cover {
@@ -31,6 +32,7 @@
 
 .cover2 {
     flex: .6;
+
 
 
 }
@@ -139,6 +141,12 @@
         width: 80%;
         /* Adjusted for responsiveness */
 
+    }
+    .cover{
+        flex: .3;
+    }
+    .cover2{
+        flex:.7
     }
 
     .question {
