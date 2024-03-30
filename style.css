@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --custom-white: hsl(0, 0%, 100%);
+    --custom-light-pink: hsl(275, 100%, 97%);
+    --custom-grayish-purple: hsl(292, 16%, 49%);
+    --custom-dark-purple: hsl(292, 42%, 14%);
+}
+
+.container {
+
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cover {
+    width: 100%;
+    flex: .4;
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-position: top;
+}
+
+.cover2 {
+    flex: .6;
+
+
+}
+
+
+.wrapper {
+    width: 600px;
+    height: fit-content;
+    border: 1px solid #cfcfcf;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1;
+
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.faq__title {
+    font-size: 3.2vw;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d3d3d3;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    transition: all .4s;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: .5vw;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.ans {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    color: #858585;
+
+    display: none;
+
+}
+
+.plus {
+    display: block;
+}
+
+.min {
+    display: none;
+}
+
+.btn img {
+    object-fit: cover;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 868px) {
+    .wrapper {
+        width: 90%;
+        /* Adjusted for responsiveness */
+        left: 50%;
+        /* Centered horizontally */
+        transform: translateX(-50%);
+        /* Centered horizontally */
+    }
+
+    .faq__title {
+        font-size: 28px;
+        font-weight: 700;
+
+    }
+
+    .title {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    .wrapper {
+        width: 80%;
+        /* Adjusted for responsiveness */
+
+    }
+
+    .question {
+        font-size: 18x;
+    }
+
+    .ans {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: normal;
+    }
+}
