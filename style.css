@@ -1,7 +1,17 @@
+@font-face {
+    font-family: WorkSans;;
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+    src:url(./assets/fonts/static/WorkSans-Regular.ttf)
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:WorkSans, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
@@ -75,6 +85,9 @@
     margin-bottom: 24px;
     padding-bottom: 10px;
     transition: all .4s;
+}
+.accordion-container:last-child {
+ border-bottom: none;
 }
 
 .question {
@@ -152,7 +165,7 @@
     }
 
     .question {
-        font-size: 18x;
+        font-size: 16px;
     }
 
     .ans {
